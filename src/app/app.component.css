@@ -14,7 +14,6 @@ html, body, material-app, md-sidenav-container, .my-content {
       color: blue;
 
       
-      
   }
   .sidenav-main-icon[_ngcontent-c0] {
     font-size: xx-large;
@@ -33,10 +32,13 @@ html, body, material-app, md-sidenav-container, .my-content {
     left: 0px !important;
     color: gray;
     font-size: xx-large !important;
-    z-index: 10;
-    content: " (" attr(href) ")"
+    -webkit-appearance: none;
+    cursor: pointer;
+    padding: 10px;
+    line-height: 75%;
   }
 
-  .sidenav-alt-main-icon:after {
-      opacity: 0;
+  .sidenav-alt-main-icon:hover {
+      color: black;
+      content: " (" Menu ")";
   }
