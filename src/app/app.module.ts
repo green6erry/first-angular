@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NgbdAlertCloseable } from './alert-closeable/alert-closeable';
+import { NgbdCarouselBasic } from './carousel/carousel-basic';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NgbdAlertCloseable
+    NgbdAlertCloseable,
+    NgbdCarouselBasic
   ],
   imports: [
     BrowserModule,
