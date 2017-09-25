@@ -5,17 +5,31 @@
       <ul>
         <li></li>
         <br /><br /><br /><br /><br /><br />
+        <img class="profile img-circle" style="max-width: 90%; max-height: 90%;"src='http://agb.rocks/face-square.jpg' alt="Amanda's face" />
         <li>Home</li>
         <li>About</li>
-        <li>Misc</li>
+        <li>Resume</li>
       </ul>
-
     </md-sidenav>
   
     <div class="sidenav-content">
+      <!-- Beginning of site -->
       
+      <!-- Header -->
+      <h1 style="text-align: center;" class="full-width">Welcome!</h1>
+      
+      <p>I don't have a lot of experience in Angular, but I've made this website for you!</p>
+      <div class="bar-graph-container full-width">
+          <p>This is the content of the second tab!</p>
+          <p><ngb-progressbar type="success" [value]="25"></ngb-progressbar></p>
+          <p><ngb-progressbar type="info" [value]="50"></ngb-progressbar></p>
+          <p><ngb-progressbar type="warning" [value]="75"></ngb-progressbar></p>
+          <p><ngb-progressbar type="danger" [value]="100"></ngb-progressbar></p>
+      </div>
+
 
   <div class="container">
+    
     <ngb-tabset>
       <ngb-tab title="Simple">
         <ng-template ngbTabContent>
@@ -53,7 +67,6 @@
 </div>
 
 </md-sidenav-container>
-<button class="sidenav-alt-main-icon" type="button" md-button (click)="sidenav.toggle()"></button>
 
 <app-burger-icon></app-burger-icon>
 
