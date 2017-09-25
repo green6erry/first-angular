@@ -11,18 +11,32 @@ html, body, material-app, md-sidenav-container, .my-content {
   }
 
   .sidenav-main-icon {
-      color: blue; !important
-      size: 600px;
-      margin: 2;
-      padding: 0;
-      min-width: 200px;
-      line-height: 200px;
+      color: blue;
 
+      
+      
   }
-
+  .sidenav-main-icon[_ngcontent-c0] {
+    font-size: xx-large;
+    z-index: 11;
+}
   ul {
       list-style: none;
   }
   md-sidenav {
     width: 200px;
+  }
+
+.sidenav-alt-main-icon {
+    position: fixed !important;
+    top: 0px !important;
+    left: 0px !important;
+    color: gray;
+    font-size: xx-large !important;
+    z-index: 10;
+    content: " (" attr(href) ")"
+  }
+
+  .sidenav-alt-main-icon:after {
+      opacity: 0;
   }
