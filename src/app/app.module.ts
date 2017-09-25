@@ -7,12 +7,15 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NgbdAlertCloseable } from './alert-closeable/alert-closeable';
 import { NgbdCarouselBasic } from './carousel/carousel-basic';
+import { KnowledgeNote } from './knowledge-note/knowledge-note';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NgbdAlertCloseable,
-    NgbdCarouselBasic
+    NgbdCarouselBasic,
+    KnowledgeNote
   ],
   imports: [
     BrowserModule,
