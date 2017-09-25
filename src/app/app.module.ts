@@ -4,12 +4,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdButtonModule, MdCheckboxModule} from '@angular/material';
+import {MdButtonModule, MdCheckboxModule, MatSidenavModule} from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { NgbdAlertCloseable } from './alert-closeable/alert-closeable';
 import { NgbdCarouselBasic } from './carousel/carousel-basic';
 import { KnowledgeNote } from './knowledge-note/knowledge-note';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { KnowledgeNote } from './knowledge-note/knowledge-note';
     AppComponent,
     NgbdAlertCloseable,
     NgbdCarouselBasic,
-    KnowledgeNote
+    KnowledgeNote,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { KnowledgeNote } from './knowledge-note/knowledge-note';
     NgbModule.forRoot(),
     BrowserAnimationsModule,
     MdButtonModule, 
-    MdCheckboxModule
+    MdCheckboxModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
