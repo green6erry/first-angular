@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { NgbdAlertCloseable } from './alert-closeable/alert-closeable';
 import { NgbdCarouselBasic } from './carousel/carousel-basic';
 import { KnowledgeNote } from './knowledge-note/knowledge-note';
-import { SidenavComponent } from './sidenav/sidenav.component';
+
 
 
 @NgModule({
@@ -18,8 +18,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     AppComponent,
     NgbdAlertCloseable,
     NgbdCarouselBasic,
-    KnowledgeNote,
-    SidenavComponent
+    KnowledgeNote
   ],
   imports: [
     BrowserModule,

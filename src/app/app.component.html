@@ -1,5 +1,14 @@
-  <app-sidenav>
-    </app-sidenav><div class="container">
+<md-sidenav-container class="sidenav-container">
+    <md-sidenav #sidenav class="sidenav">
+      Jolly good!
+    </md-sidenav>
+  
+    <div class="sidenav-content">
+      <button type="button" md-button (click)="sidenav.open()">
+        Open sidenav
+      </button>
+
+  <div class="container">
     <ngb-tabset>
       <ngb-tab title="Simple">
         <ng-template ngbTabContent>
@@ -33,3 +42,7 @@
 <ngbd-carousel-basic></ngbd-carousel-basic>
 </div>
 <app-knowledge-note class="knote"></app-knowledge-note>
+
+</div>
+
+</md-sidenav-container>
