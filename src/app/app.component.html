@@ -1,11 +1,18 @@
 <md-sidenav-container class="sidenav-container">
-    <md-sidenav #sidenav class="sidenav">
-      Jolly good!
+    <md-sidenav #sidenav class="sidenav" mode="push">
+      <ul>
+        <li></li>
+        <br />
+        <li>Home</li>
+        <li>About</li>
+        <li>Misc</li>
+      </ul>
+
     </md-sidenav>
   
     <div class="sidenav-content">
-      <button type="button" md-button (click)="sidenav.open()">
-        Open sidenav
+      <button class="sidenav-main-icon" type="button" md-button (click)="sidenav.open()">
+          &#9776;
       </button>
 
   <div class="container">
