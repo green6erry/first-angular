@@ -1,7 +1,18 @@
 
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+.example-card {
+  width: 400px;
+}
+
+.example-header-image {
+  /* background-image: url('../../../assets/img/examples/shiba1.jpg'); */
+  background-size: cover;
+}
 * {
   vertical-align: middle;  
-  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  /* font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif; */
 }
 
 

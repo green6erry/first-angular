@@ -16,20 +16,30 @@
       <!-- Beginning of site -->
       
       <!-- Header -->
-      <header>
+      <div class="header container">
           <h1 style="text-align: center;" class="full-width">Welcome!</h1>
           
           <p>I don't have a lot of experience in Angular, but I've made this website for you!</p>
-      </header>
+      </div>
       <hr />
-      <div class="bar-graph-container full-width">
+      <div class="container">
           <p>This is the content of the second tab!</p>
           <p><ngb-progressbar type="success" [value]="25"></ngb-progressbar></p>
           <p><ngb-progressbar type="info" [value]="50"></ngb-progressbar></p>
           <p><ngb-progressbar type="warning" [value]="75"></ngb-progressbar></p>
           <p><ngb-progressbar type="danger" [value]="100"></ngb-progressbar></p>
       </div>
-
+               
+      <div ng-controller="AnchorScrollController">
+        
+        <a href="" id="upLink" ng-click="moveDown()">Go to down</a>
+        <div style="height:1000px">
+          <p style="font-family:Arial;color:yellow;background:steelblue;padding:3px;width:350px;">Down Link</p> 
+        </div>
+         <a href="" id="downLink" ng-click="moveTop()">Go to down</a>
+          <p style="font-family:Arial;color:yellow;background:steelblue;padding:3px;width:350px;">Up Link</p>
+        
+          </div>  
 
   <div class="container">
     
@@ -37,19 +47,16 @@
       <ngb-tab title="Simple">
         <ng-template ngbTabContent>
           <p>This is the content of the first tab!</p>
-          <ngb-alert [dismissible]="false">
+          
+          <!-- <ngb-alert [dismissible]="false">
             <strong>Warning!</strong> This is an alert!
-          </ngb-alert>
+          </ngb-alert> -->
         </ng-template>
       </ngb-tab>
       <ngb-tab>
         <ng-template ngbTabTitle><b>Fancy</b> title</ng-template>
         <ng-template ngbTabContent>
           <p>This is the content of the second tab!</p>
-          <p><ngb-progressbar type="success" [value]="25"></ngb-progressbar></p>
-          <p><ngb-progressbar type="info" [value]="50"></ngb-progressbar></p>
-          <p><ngb-progressbar type="warning" [value]="75"></ngb-progressbar></p>
-          <p><ngb-progressbar type="danger" [value]="100"></ngb-progressbar></p>
         </ng-template>
       </ngb-tab>
       <ngb-tab title="Disabled" [disabled]="true">
@@ -59,21 +66,48 @@
       </ngb-tab>
     </ngb-tabset>
   </div>
+  <hr />
+  <br />
 <div class="container">
   <ngbd-alert-closeable></ngbd-alert-closeable>
 </div>
+<br />
 <div class="container">
 <ngbd-carousel-basic></ngbd-carousel-basic>
 </div>
+<br />
 <app-knowledge-note class="knote"></app-knowledge-note>
-
+<br />
+<md-card class="card">
+    <md-card-header>
+      <div md-card-avatar class="header-image"></div>
+      <md-card-title>Shiba Inu</md-card-title>
+      <md-card-subtitle>Dog Breed</md-card-subtitle>
+    </md-card-header>
+    <img md-card-image src="https://d33wubrfki0l68.cloudfront.net/ca0061c3c33c88b2b124e64ad341e15e2a17af49/c8765/images/alligator-logo3.svg" alt="Photo of a Shiba Inu">
+    <md-card-content>
+      <p>
+        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+        bred for hunting.
+      </p>
+    </md-card-content>
+    <md-card-actions>
+      <button md-button>LIKE</button>
+      <button md-button>SHARE</button>
+    </md-card-actions>
+  </md-card>
 </div>
 
 </md-sidenav-container>
 
-<app-burger-icon></app-burger-icon>
+
 
  <div class="sidenav-alt-main-icon"  type="button" md-button (click)="sidenav.toggle()">
     &#9776;
  </div>
+ 
+ <!-- <app-burger2>sdfs</app-burger2> -->
+
+ 
 

@@ -2,22 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>FirstAngular</title>
+  <title>AGB</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script SRC="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.js"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>   
+     var app = angular.module("AnchorScrollInitialization",[]); 
+    app.controller("AnchorScrollController",['$location','$anchorScroll','$scope', function ($location,$anchorScroll,$scope)                 {  
+         $scope.moveTop = function()
+          {
+             $location.hash('upLink'); 
+             $anchorScroll();
+          }
+          $scope.moveDown = function()
+          {                           
+             $location.hash('downLink'); 
+             $anchorScroll();
+          }                                                                       
+   }]);  
+ </script>
 </head>
-<body>
-    <script type="text/javasript">
-      $(document).ready(function($) {
-      $('.burger').click(function() {
-        $( this ).toggleClass( "cross" );
-      });
-    });
-  </script>
+<body ng-app="AnchorScrollInitialization">
+    
   <app-root>Ready, set...</app-root>
+  
 
 </body>
 </html>
