@@ -11,7 +11,6 @@ import { NgbdAlertCloseable } from './alert-closeable/alert-closeable';
 import { NgbdCarouselBasic } from './carousel/carousel-basic';
 import { KnowledgeNote } from './knowledge-note/knowledge-note';
 import { BurgerIconComponent } from './burger-icon/burger-icon.component';
-import { ToggleDirective } from './toggle.directive';
 import {MatCardModule} from '@angular/material';
 import { Burger2Component } from './burger2/burger2';
 
@@ -24,7 +23,6 @@ import { Burger2Component } from './burger2/burger2';
     NgbdCarouselBasic,
     KnowledgeNote,
     BurgerIconComponent,
-    ToggleDirective,
     Burger2Component
   ],
   imports: [
