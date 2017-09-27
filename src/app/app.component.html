@@ -1,15 +1,14 @@
-
 <md-sidenav-container class="sidenav-container" style="position: absolute;">
-  
+    
     <md-sidenav #sidenav class="sidenav" mode="push">
-      <ul>
-        <li></li>
-        <br /><br /><br /><br /><br /><br />
-        <img class="profile img-circle" style="max-width: 90%; max-height: 90%;"src='http://agb.rocks/face-square.jpg' alt="Amanda's face" />
-        <li>Home</li>
-        <li>About</li>
-        <li>Resume</li>
-      </ul>
+
+        <div ng-controller="AnchorScrollController">
+            <a href="" ng-click="jumpToLocation('About')">
+                <img class="profile img-circle" style="max-width: 90%; max-height: 90%;"src='http://agb.rocks/face-square.jpg' alt="Amanda's face" />
+            </a><br/>
+            
+        </div>
+
     </md-sidenav>
   
     <div class="sidenav-content">
@@ -29,17 +28,7 @@
           <p><ngb-progressbar type="warning" [value]="75"></ngb-progressbar></p>
           <p><ngb-progressbar type="danger" [value]="100"></ngb-progressbar></p>
       </div>
-               
-      <div ng-controller="AnchorScrollController">
-        
-        <a href="" id="upLink" ng-click="moveDown()">Go to down</a>
-        <div style="height:1000px">
-          <p style="font-family:Arial;color:yellow;background:steelblue;padding:3px;width:350px;">Down Link</p> 
-        </div>
-         <a href="" id="downLink" ng-click="moveTop()">Go to down</a>
-          <p style="font-family:Arial;color:yellow;background:steelblue;padding:3px;width:350px;">Up Link</p>
-        
-          </div>  
+
 
   <div class="container">
     
@@ -78,7 +67,7 @@
 <br />
 <app-knowledge-note class="knote"></app-knowledge-note>
 <br />
-<md-card class="card">
+<md-card class="card" id="About">
     <md-card-header>
       <div md-card-avatar class="header-image"></div>
       <md-card-title>Shiba Inu</md-card-title>
@@ -103,7 +92,7 @@
 
 
 
- <div class="sidenav-alt-main-icon"  type="button" md-button (click)="sidenav.toggle()">
+ <div class="sidenav-alt-main-icon"  select="disabled" type="button" md-button (click)="sidenav.toggle()">
     &#9776;
  </div>
  

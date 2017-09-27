@@ -8,23 +8,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script SRC="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.js"></script> 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>   
-     var app = angular.module("AnchorScrollInitialization",[]); 
-    app.controller("AnchorScrollController",['$location','$anchorScroll','$scope', function ($location,$anchorScroll,$scope)                 {  
-         $scope.moveTop = function()
-          {
-             $location.hash('upLink'); 
-             $anchorScroll();
-          }
-          $scope.moveDown = function()
-          {                           
-             $location.hash('downLink'); 
-             $anchorScroll();
-          }                                                                       
-   }]);  
- </script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js">
+  </script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.min.js">
+  </script>
+   <script>   
+    var app = angular.module("AnchorScrollInitialization",[]); 
+   app.controller("AnchorScrollController",['$location','$anchorScroll','$scope', function ($location,$anchorScroll,$scope)                 {  
+        $scope.moveTop = function()
+         {
+            $location.hash("upLink"); 
+            $anchorScroll();
+         }
+         $scope.jumpToLocation = function(key){
+            $location.hash(key);
+            $anchorScroll();
+         }                                                                       
+  }]);  
+</script> 
+  
+  
 </head>
 <body ng-app="AnchorScrollInitialization">
     
