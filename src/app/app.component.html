@@ -1,102 +1,107 @@
 <md-sidenav-container class="sidenav-container" style="position: absolute;">
     
     <md-sidenav #sidenav class="sidenav" mode="push">
-
-        <div ng-controller="AnchorScrollController">
-            <a href="" ng-click="jumpToLocation('About')">
-                <img class="profile img-circle" style="max-width: 90%; max-height: 90%;"src='http://agb.rocks/face-square.jpg' alt="Amanda's face" />
-            </a><br/>
+        
+            <div ng-controller="AnchorScrollController">
+              
+              <a href="#" ng-click="jumpToLocation('About')">
+                <img class="img-circle" style="max-width: 80%; max-height: 80%;" src='http://agb.rocks/face-square.jpg' alt="Amanda's face" /></a><br/>
+              <a href="" ng-click="jumpToLocation('Home')">Home</a><br/>
+              <a href="" ng-click="jumpToLocation('About')">About</a><br/>
+              <a href="" ng-click="jumpToLocation('Resume')">Resume</a><br/>
+              <a href="" ng-click="jumpToLocation('Contact')">Contact</a><br/>
+              <a href="" class="toTop" ng-click="jumpToLocation('Top')">&#187;</a><br/>
+              
+            </div>
             
-        </div>
-
     </md-sidenav>
-  
-    <div class="sidenav-content">
-      <!-- Beginning of site -->
-      
-      <!-- Header -->
-      <div class="header container">
-          <h1 style="text-align: center;" class="full-width">Welcome!</h1>
-          
-          <p>I don't have a lot of experience in Angular, but I've made this website for you!</p>
-      </div>
-      <hr />
-      <div class="container">
-          <p>This is the content of the second tab!</p>
-          <p><ngb-progressbar type="success" [value]="25"></ngb-progressbar></p>
-          <p><ngb-progressbar type="info" [value]="50"></ngb-progressbar></p>
-          <p><ngb-progressbar type="warning" [value]="75"></ngb-progressbar></p>
-          <p><ngb-progressbar type="danger" [value]="100"></ngb-progressbar></p>
-      </div>
-
-
-  <div class="container">
+    <!-- TODO: clean up breaks in CSS -->
+        
+          <!-- Beginning of site -->
+          <div class="sidenav-content">
+        
+            <!-- Header -->
+            <div class="header container">
+              <h1 style="text-align: center;" class="full-width">Welcome!</h1>
+        
+              <p>I don't have a lot of experience in Angular, but I've made this website for you!</p>
+            </div>
+            <hr />
+            
+            <!-- About -->
+            <div class="container" id="About">
+              <h1>About</h1>
+              <p>This is the content of the second tab!</p>
+              <p>
+                <ngb-progressbar type="success" [value]="25"></ngb-progressbar>
+              </p>
+              <p>
+                <ngb-progressbar type="info" [value]="50"></ngb-progressbar>
+              </p>
+              <p>
+                <ngb-progressbar type="warning" [value]="75"></ngb-progressbar>
+              </p>
+              <p>
+                <ngb-progressbar type="danger" [value]="100"></ngb-progressbar>
+              </p>
+            </div>
+        
+            <!-- Resume -->
+            <div class="container" id="Resume">
+              <h1>Resume</h1>
+              <ngb-tabset>
+                <ngb-tab title="Simple">
+                  <ng-template ngbTabContent>
+                    <p>This is the content of the first tab!</p>
+        
+                    <!-- <ngb-alert [dismissible]="false">
+                    <strong>Warning!</strong> This is an alert!
+                  </ngb-alert> -->
+                  </ng-template>
+                </ngb-tab>
+                <ngb-tab>
+                  <ng-template ngbTabTitle><b>Fancy</b> title</ng-template>
+                  <ng-template ngbTabContent>
+                    <p>This is the content of the second tab!</p>
+                  </ng-template>
+                </ngb-tab>
+                <ngb-tab title="Disabled" [disabled]="true">
+                  <ng-template ngbTabContent>
+                    <p>This tab is disabled</p>
+                  </ng-template>
+                </ngb-tab>
+              </ngb-tabset>
+            </div>
     
-    <ngb-tabset>
-      <ngb-tab title="Simple">
-        <ng-template ngbTabContent>
-          <p>This is the content of the first tab!</p>
-          
-          <!-- <ngb-alert [dismissible]="false">
-            <strong>Warning!</strong> This is an alert!
-          </ngb-alert> -->
-        </ng-template>
-      </ngb-tab>
-      <ngb-tab>
-        <ng-template ngbTabTitle><b>Fancy</b> title</ng-template>
-        <ng-template ngbTabContent>
-          <p>This is the content of the second tab!</p>
-        </ng-template>
-      </ngb-tab>
-      <ngb-tab title="Disabled" [disabled]="true">
-        <ng-template ngbTabContent>
-          <p>This tab is disabled</p>
-        </ng-template>
-      </ngb-tab>
-    </ngb-tabset>
-  </div>
-  <hr />
-  <br />
-<div class="container">
-  <ngbd-alert-closeable></ngbd-alert-closeable>
-</div>
-<br />
-<div class="container">
-<ngbd-carousel-basic></ngbd-carousel-basic>
-</div>
-<br />
-<app-knowledge-note class="knote"></app-knowledge-note>
-<br />
-<md-card class="card" id="About">
-    <md-card-header>
-      <div md-card-avatar class="header-image"></div>
-      <md-card-title>Shiba Inu</md-card-title>
-      <md-card-subtitle>Dog Breed</md-card-subtitle>
-    </md-card-header>
-    <img md-card-image src="https://d33wubrfki0l68.cloudfront.net/ca0061c3c33c88b2b124e64ad341e15e2a17af49/c8765/images/alligator-logo3.svg" alt="Photo of a Shiba Inu">
-    <md-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
-    </md-card-content>
-    <md-card-actions>
-      <button md-button>LIKE</button>
-      <button md-button>SHARE</button>
-    </md-card-actions>
-  </md-card>
-</div>
-
-</md-sidenav-container>
-
-
-
- <div class="sidenav-alt-main-icon"  select="disabled" type="button" md-button (click)="sidenav.toggle()">
-    &#9776;
- </div>
- 
- <!-- <app-burger2>sdfs</app-burger2> -->
-
- 
-
+            <hr />
+    
+    
+            <br />
+    
+    
+            <!-- Alerts -->
+            <div class="container">
+              <ngbd-alert-closeable></ngbd-alert-closeable>
+            </div>
+            <br />
+    
+            <!-- Picture Slideshow -->
+            <div class="container" id="Pictures">
+              <ngbd-carousel-basic></ngbd-carousel-basic>
+            </div>
+            <br />
+    
+            <!-- Contact -->
+            <div class="container" id="Contact">
+              <h1>Contact</h1>
+            </div>
+            </div>
+    
+    </md-sidenav-container>
+    
+    
+    <div class="sidenav-alt-main-icon" select="disabled" type="button" md-button (click)="sidenav.toggle()">
+      &#9776;
+    </div>
+    
+    <!-- <app-burger2>sdfs</app-burger2> -->
