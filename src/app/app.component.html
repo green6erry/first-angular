@@ -1,19 +1,24 @@
-<md-sidenav-container class="sidenav-container" style="position: absolute;">
+<md-sidenav-container class="sidenav-container" style="position: absolute;" >
     
     <md-sidenav #sidenav class="sidenav" mode="push">
         
             <div ng-controller="AnchorScrollController" style="text-align: center;">
                 <br /><br /><br />
-              <a href="#" ng-click="jumpToLocation('About')">
-                <img class="img-circle" style="max-width: 80%; max-height: 80%;" src='http://agb.rocks/face-square.jpg' alt="Amanda's face" /></a><br/>
-              
+              <div>
+                  <a href="#"></a>
+                  <a href="#" ng-click="jumpToLocation('About')">
+                      <img class="img-circle" style="max-width: 80%; max-height: 80%;" src='http://agb.rocks/face-square.jpg' alt="Amanda's face" /></a><br/>
+              </div>
+              <div class="subnav-links" >
                 <a href="" ng-click="jumpToLocation('Home')">Home</a><br/>
               <a href="" ng-click="jumpToLocation('About')">About</a><br/>
               <a href="" ng-click="jumpToLocation('Resume')">Resume</a><br/>
+              <a href="" ng-click="jumpToLocation('')">Design</a><br/>
               <a href="" ng-click="jumpToLocation('Contact')">Contact</a><br/>
-              <a href="" class="toTop" ng-click="upLink()">&#187;</a><br/>
-              
             </div>
+              <a href="" class="toTop" ng-click="jumpToLocation('Home')">&#187;</a><br/>
+            
+          </div>
             
     </md-sidenav>
     <!-- TODO: clean up breaks in CSS -->
@@ -22,56 +27,215 @@
           <div class="sidenav-content">
         
             <!-- Header -->
+            <div class="container"><p class="disclaimer">Heyo!</p></div>
             <div class="header container">
-              <h1 style="text-align: center;" class="full-width">Welcome!</h1>
+                <h1 style="text-align: center;" class="full-width">Welcome!</h1>
         
-              <p>My name is Amanda Greenberry Brown and I'm a web developer based in Washington, DC. I have never made an Angular application before, but am extremely motivated to do so after hearing that is it the preferred language of Full Measure Education. I don't have a lot of experience in Angular, but I've made this website for you!</p>
-              <h4>Resources</h4>
-              <p>In the construction of this page, I have used a great many resources.</p>
+              <p>My name is Amanda Greenberry Brown and I'm a web developer based in Washington, DC. I have never made an Angular application before, but am extremely motivated to do so after hearing that is it the preferred language of Full Measure Education. I don't have a lot of experience in Angular, but I've made this website for you!</p> <br />
+              <p class="disclaimer">It's definitely a website</p><h3>About This Website</h3> 
+              <br />
+              <h4>Resources</h4> 
+              <p>
+                  I have tried and suceeded/failed to use so many resources. The ones that survived were:</p>
+                  <ol>
+                    <li><a href="https://ng-bootstrap.github.io">ng-boostrap</a></li>
+                    <li><a href="https://material.angular.io/">Angular Material</a></li>
+                    <li>Classes by <a href="https://www.skillshare.com/user/angular">Grant 'Angular' L</a></li>
+                  </ol>
+              <p>This project has turned into quite a saga of failure and success. I can't wait to feel comfortable with all of the amazing resources I couldn't get to work, but are clearly <i>awesome</i> and will be extremely useful/visually pleasing.</p><br />
+              <p class="disclaimer">Seriously, why would I present this crappy website you wonder?</p>
+              <h3>Disclaimer</h3>
+              <p>This one-page website is far from perfect. I would relish the opportunity to get to practice some more elegant ways of coding in Angular. But it has been a lot of fun.<br /><br />I have reached the point where I just need to get it sent before it's too late!<br /><br />What I'm trying to convey is:</p>
+                <ol>
+                  <li>I can learn a new language and do <i>something</i> with it in a week.</li>
+                  <li>My design skills exist.</li>
+                  <li>I'm very serious about wanting to work for Full Measure!</li>
+                </ol>
             </div>
             <hr />
             
             <!-- About -->
             <div class="container" id="About">
-              <h1>About</h1>
-              <p>This is the content of the second tab!</p>
-              <p>
-                <ngb-progressbar type="success" [value]="25"></ngb-progressbar>
-              </p>
-              <p>
-                <ngb-progressbar type="info" [value]="50"></ngb-progressbar>
-              </p>
-              <p>
-                <ngb-progressbar type="warning" [value]="75"></ngb-progressbar>
-              </p>
-              <p>
-                <ngb-progressbar type="danger" [value]="100"></ngb-progressbar>
-              </p>
+                <p class="disclaimer">A bunch of "I-statements".</p>
+                <h1>About Me</h1>
+              <p>I was born in DC, grew up in MD. From a young age, I was climbing everything that I could (as well as many things that I shouldn't). Into adulthood, this translated into becoming a rock climber where people don't get <i>so</i> mad at you for climbing things. <br /><br />I love learning working and school was a perfect outlet for that. I graduated from UMD a semester early -- not because I was especially smart, but because I loved the challenge.<br /><br />
+              I'm an active memeber at Washington Improv Theater (or WIT) as both an improviser and a volunteer. Although it has only been a year, improv has had a huge impact on my life. Just in being able to talk to people it has helped, but also at work when I need to support someone, I am now considerably equipped to do so. </p>
+              
+              
             </div>
+            <hr>
         
             <!-- Resume -->
             <div class="container" id="Resume">
-              <h1>Resume</h1>
+                <p class="disclaimer" select="disable">I like to make things and help people.</p> <br />
+                <h1>Resume</h1>
+                <br />
               <ngb-tabset>
-                <ngb-tab title="Simple">
+                <ngb-tab title="Introduction">
                   <ng-template ngbTabContent>
-                    <p>This is the content of the first tab!</p>
-        
+                    <div class="resume-tab">
+                        <p>This section can serve as an opportunity to read a little bit more about three central focuses I have within my work experience. It's too much to put on a resume cleanly, but an abridged, pretty version is available <a hreg="http://agb.rocks/Resume.092617.WebDeveloper.pdf">here</a>.</p>
+                        <p>Let me know if you have any further questions! You can do so <a href="mailto:green6erry@gmail.com?subject=I have a question about your resume!">here</a>.</p>
+                    </div>
+                    
+                    
                     <!-- <ngb-alert [dismissible]="false">
                     <strong>Warning!</strong> This is an alert!
                   </ngb-alert> -->
                   </ng-template>
                 </ngb-tab>
                 <ngb-tab>
-                  <ng-template ngbTabTitle><b>Fancy</b> title</ng-template>
-                  <ng-template ngbTabContent>
-                    <p>This is the content of the second tab!</p>
-                  </ng-template>
+                    <ng-template ngbTabTitle>Communications</ng-template>
+                    <ng-template ngbTabContent>
+                        <br /><p>My experience in communications is possibly my biggest strength. </p>
+                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                          <ngb-panel title="Simple">
+                            <ng-template ngbPanelContent>
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+                              aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                              sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                              labore sustainable VHS.<br /><br />
+                              <p>Intellectual
+                                  <ngb-progressbar type="success" [value]="25"></ngb-progressbar>
+                                </p>
+                                <p>Active
+                                  <ngb-progressbar type="info" [value]="50"></ngb-progressbar>
+                                </p>
+                                <p> Growth
+                                  <ngb-progressbar type="warning" [value]="75"></ngb-progressbar>
+                                </p>
+                                <p> Love
+                                  <ngb-progressbar type="danger" [value]="100"></ngb-progressbar>
+                                </p>
+                            </ng-template>
+                          </ngb-panel>
+                          </ngb-accordion>
+                    </ng-template>
                 </ngb-tab>
-                <ngb-tab title="Disabled" [disabled]="true">
-                  <ng-template ngbTabContent>
-                    <p>This tab is disabled</p>
-                  </ng-template>
+                <ngb-tab>
+                    <ng-template ngbTabTitle>Technology</ng-template>
+                    <ng-template ngbTabContent><br />
+                      <p>Technology is what makes me happiest. My mom ran a company called "Computertots" when I was young. From that day on, I've had nightmares about the witch in one of the games sneaking through the window like she did in the game. I might've been a little too young when I learned MS-DOS<br /><br />
+                      Nowadays, I have a love/hate relationship with the Console Log! Making this application this week has been a ton of fun.  </p>
+                      
+                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                          <ngb-panel id="toggle-1" title="Sugarloaf Network Solutions">
+                            <ng-template ngbPanelContent>
+                                <h2>Sugarloaf Network Solutions</h2>
+                                <p>I climbed radio towers and would install/replace radio equipment</p>
+                                <img style="float: right;padding-left: 2%;" src="http://agb.rocks/imonatower.jpg" alt="AGB on a tower" /><br /><br />
+                              <p><span class="bar-label">Intellectual</span>
+                                  <ngb-progressbar type="success" [value]="25"></ngb-progressbar>
+                                </p>
+                                <p><span class="bar-label">Active</span>
+                                  <ngb-progressbar type="info" [value]="50"></ngb-progressbar>
+                                </p>
+                                <p><span class="bar-label">Growth</span>
+                                  <ngb-progressbar type="warning" [value]="75"></ngb-progressbar>
+                                </p>
+                                <p><span class="bar-label">Love</span>
+                                  <ngb-progressbar type="danger" [value]="100"></ngb-progressbar>
+                                </p>
+                            </ng-template>
+                          </ngb-panel>
+                          </ngb-accordion>
+
+                          <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                              <ngb-panel id="toggle-2" title="Blackstone Technology">
+                                <ng-template ngbPanelContent>
+                                    <h2>Sugarloaf Network Solutions</h2>
+                                    <p>I climbed radio towers and would install/replace radio equipment</p>
+                                    <img style="float: right;padding-left: 2%;" src="http://agb.rocks/imonatower.jpg" alt="AGB on a tower" /><br /><br />
+                                  <p><span class="bar-label">Intellectual</span>
+                                      <ngb-progressbar type="success" [value]="25"></ngb-progressbar>
+                                    </p>
+                                    <p><span class="bar-label">Active</span>
+                                      <ngb-progressbar type="info" [value]="50"></ngb-progressbar>
+                                    </p>
+                                    <p><span class="bar-label">Growth</span>
+                                      <ngb-progressbar type="warning" [value]="75"></ngb-progressbar>
+                                    </p>
+                                    <p><span class="bar-label">Love</span>
+                                      <ngb-progressbar type="danger" [value]="100"></ngb-progressbar>
+                                    </p>
+                                </ng-template>
+                              </ngb-panel>
+                              </ngb-accordion>
+
+                              <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                                  <ngb-panel id="toggle-3" title="Alectrona">
+                                    <ng-template ngbPanelContent>
+                                        <h2>Sugarloaf Network Solutions</h2>
+                                        <p>I climbed radio towers and would install/replace radio equipment</p>
+                                        <img style="float: right;padding-left: 2%;" src="http://agb.rocks/imonatower.jpg" alt="AGB on a tower" /><br /><br />
+                                      <p><span class="bar-label">Intellectual</span>
+                                          <ngb-progressbar type="success" [value]="25"></ngb-progressbar>
+                                        </p>
+                                        <p><span class="bar-label">Active</span>
+                                          <ngb-progressbar type="info" [value]="50"></ngb-progressbar>
+                                        </p>
+                                        <p><span class="bar-label">Growth</span>
+                                          <ngb-progressbar type="warning" [value]="75"></ngb-progressbar>
+                                        </p>
+                                        <p><span class="bar-label">Love</span>
+                                          <ngb-progressbar type="danger" [value]="100"></ngb-progressbar>
+                                        </p>
+                                    </ng-template>
+                                  </ngb-panel>
+                                  </ngb-accordion>
+
+
+
+                      
+                      
+                      <h2>Blackstone Technology</h2>
+                      <h5>Certifications</h5>
+                      <ul>
+                          <li>• MIx Developer</li>
+                      </ul>
+                      
+                      <h2>Alectrona</h2>
+                      <h5>Certifications</h5>
+                      <ul>
+                        <li>• JAMF CCT</li>
+                        <li>• JAMF CCA</li>
+                        <li>• JAMF CJA</li>
+                        <li>• Apple Consultant</li>
+                        
+                      </ul>
+                      <p>
+                          <ngb-progressbar type="success" [value]="25"></ngb-progressbar>
+                        </p>
+                        <p>
+                          <ngb-progressbar type="info" [value]="50"></ngb-progressbar>
+                        </p>
+                        <p>
+                          <ngb-progressbar type="warning" [value]="75"></ngb-progressbar>
+                        </p>
+                        <p>
+                          <ngb-progressbar type="danger" [value]="100"></ngb-progressbar>
+                        </p>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab>
+                    <ng-template ngbTabTitle>Design</ng-template>
+                    <ng-template ngbTabContent><br />
+                      <p>Design has been in my background for as long as I can remember.</p>
+                      <p>
+                          <ngb-progressbar type="success" [value]="25"></ngb-progressbar>
+                        </p>
+                        <p>
+                          <ngb-progressbar type="info" [value]="50"></ngb-progressbar>
+                        </p>
+                        <p>
+                          <ngb-progressbar type="warning" [value]="75"></ngb-progressbar>
+                        </p>
+                        <p>
+                          <ngb-progressbar type="danger" [value]="100"></ngb-progressbar>
+                        </p>
+                    </ng-template>
                 </ngb-tab>
               </ngb-tabset>
             </div>
@@ -83,27 +247,34 @@
     
     
             <!-- Alerts -->
-            <div class="container">
+            <!-- <div class="container">
               <ngbd-alert-closeable></ngbd-alert-closeable>
             </div>
-            <br />
+            <br /> -->
     
             <!-- Picture Slideshow -->
-            <div class="container" id="Pictures">
+            
+            <div class="container" id="Design">
+                <p class="disclaimer">Sorry the formatting is crap.</p>
+                <h1>Design Examples</h1><sub>(You can view more <a href="http://agb.rocks/apps.html">here)</a>.</sub><br /><br />
               <ngbd-carousel-basic></ngbd-carousel-basic>
             </div>
             <br />
-    
+    <hr>
             <!-- Contact -->
             <div class="container" id="Contact">
+                <p class="disclaimer">I would be so excited.</p>
               <h1>Contact</h1>
+              <p>You can email me <a href="mailto:green6erry@gmail.com?subject=Contact from your website">here</a> should you feel inclined to speak further. <br />
+                You can also check out my website at http://agb.rocks/. <br /><br /><sub>(The "rocks" ending is in reference to my time as a rock climber and less to say "I think I'm amazing". But hopefully I'm okay!)</sub><br />
+                <br />Thanks for looking at my website and I hope to speak soon!</p><br /><p class="disclaimer">Cheers!</p>
             </div>
             </div>
     
     </md-sidenav-container>
     
     
-    <div class="sidenav-alt-main-icon" select="disabled" type="button" md-button (click)="sidenav.toggle()">
+    <div class="sidenav-alt-main-icon" user-select="none" type="button" md-button (click)="sidenav.toggle()">
       &#9776;
     </div>
     
