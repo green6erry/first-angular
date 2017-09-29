@@ -1,0 +1,6 @@
+* > * {
+    user-select: none;
+}
+a:active {
+    border: none;
+}
