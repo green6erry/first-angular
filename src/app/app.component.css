@@ -112,11 +112,12 @@ html, body, material-app, md-sidenav-container, .my-content {
   .disclaimer, .span-disclaimer {
     font-family: 'Homemade Apple', cursive;
     color: lightgray;
-    opacity: .25;
+    opacity: .27;
   }
   .disclaimer {
     position: absolute;
     font-size: 40px;
+    line-height: 90%;
   }
   .span-disclaimer {
     font-family: 'Homemade Apple', cursive;
