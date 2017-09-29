@@ -88,30 +88,85 @@
                     <ng-template ngbTabTitle>Communications</ng-template>
                     <ng-template ngbTabContent>
                         <br /><p>My experience in communications is possibly my biggest strength. </p>
+                        <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                            <ngb-panel id="toggle-1" title="Bachelors Degree">
+                              <ng-template ngbPanelContent>
+                                  <h2>Bachelors in Communications from UMD</h2>
+                                  <p>My education has become my distinguishing feature in the tech world. I’ve gained awareness of the social dynamics, both in a workplace and the digital world. I’ve learned to foster the highest level of customer service, teamwork practices, and conflict-resolution strategies. 
+                                    </p>
+                                    <h4>Communications was Great<br /><span class="span-disclaimer">I actually wanted to be an Engineer...</span></h4>
+                                    <p>To be entirely honest, I had a GPA of 3.8 and yet I knew from rather on that this would be a degree and not my career. I worked a minimum of 2 extra jobs on top of being a full-time student from sophmore year onwards, including my final semester when I was pursuing 21 course credits. <br /><span class="span-disclaimer">Sleep is for the dead.</span> <br /><br />This experience was an excellent lesson. I have learned that when I'm not stimulated with what I'm doing, I will find something that will. In college, that meant being a workaholic. Nowadays, it means being a workaholic (albeit one that sleeps more). I like to work, and for me that means needing to perform a balancing-act; needing to be pulled in different directions. </p>
+                                    
+                                  <br /><br />
+                                <p><span ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave" popoverTitle="Pop title"  class="bar-label">Intellectual</span>
+                                    <ngb-progressbar  type="success" [value]="50"></ngb-progressbar>
+                                  </p>
+                                  <p><span class="bar-label">Active</span>
+                                    <ngb-progressbar type="info" [value]="100"></ngb-progressbar>
+                                  </p>
+                                  <p><span class="bar-label">Growth</span>
+                                    <ngb-progressbar type="warning" [value]="95"></ngb-progressbar>
+                                  </p>
+                                  <p><span class="bar-label">Love</span>
+                                    <ngb-progressbar type="danger" [value]="75"></ngb-progressbar>
+                                  </p>
+                              </ng-template>
+                            </ngb-panel>
+                      </ngb-accordion>
                       <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
-                          <ngb-panel title="Simple">
+                          <ngb-panel id="toggle-2" title="Retail">
                             <ng-template ngbPanelContent>
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
-                              aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                              sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-                              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                              labore sustainable VHS.<br /><br />
-                              <p>Intellectual
+                                <h2>Retail</h2>
+                                <h5>Certifications</h5>
+                                <ul>
+                                  <li>• JAMF CCT</li>
+                                  <li>• JAMF CCA</li>
+                                  <li>• JAMF CJA</li>
+                                  <li>• Apple Consultant</li>
+                                  
+                                </ul><br /><br />
+                              <p><span class="bar-label">Intellectual</span>
                                   <ngb-progressbar type="success" [value]="25"></ngb-progressbar>
                                 </p>
-                                <p>Active
+                                <p><span class="bar-label">Active</span>
                                   <ngb-progressbar type="info" [value]="50"></ngb-progressbar>
                                 </p>
-                                <p> Growth
+                                <p><span class="bar-label">Growth</span>
                                   <ngb-progressbar type="warning" [value]="75"></ngb-progressbar>
                                 </p>
-                                <p> Love
+                                <p><span class="bar-label">Love</span>
                                   <ngb-progressbar type="danger" [value]="100"></ngb-progressbar>
                                 </p>
                             </ng-template>
                           </ngb-panel>
-                          </ngb-accordion>
+                    </ngb-accordion>
+                    <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                        <ngb-panel id="toggle-3" title="Earth Treks">
+                          <ng-template ngbPanelContent>
+                              <h2>Earth Treks</h2>
+                              <h5>Certifications</h5>
+                              <ul>
+                                <li>• JAMF CCT</li>
+                                <li>• JAMF CCA</li>
+                                <li>• JAMF CJA</li>
+                                <li>• Apple Consultant</li>
+                                
+                              </ul><br /><br />
+                            <p><span class="bar-label">Intellectual</span>
+                                <ngb-progressbar type="success" [value]="25"></ngb-progressbar>
+                              </p>
+                              <p><span class="bar-label">Active</span>
+                                <ngb-progressbar type="info" [value]="50"></ngb-progressbar>
+                              </p>
+                              <p><span class="bar-label">Growth</span>
+                                <ngb-progressbar type="warning" [value]="75"></ngb-progressbar>
+                              </p>
+                              <p><span class="bar-label">Love</span>
+                                <ngb-progressbar type="danger" [value]="100"></ngb-progressbar>
+                              </p>
+                          </ng-template>
+                        </ngb-panel>
+                  </ngb-accordion>
                     </ng-template>
                 </ngb-tab>
                 <ngb-tab>
@@ -145,9 +200,11 @@
                           <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
                               <ngb-panel id="toggle-2" title="Blackstone Technology">
                                 <ng-template ngbPanelContent>
-                                    <h2>Sugarloaf Network Solutions</h2>
-                                    <p>I climbed radio towers and would install/replace radio equipment</p>
-                                    <img style="float: right;padding-left: 2%;" src="http://agb.rocks/imonatower.jpg" alt="AGB on a tower" /><br /><br />
+                                    <h2>Blackstone Technology</h2>
+                                    <h5>Certifications</h5>
+                                    <ul>
+                                        <li>• MIx Developer</li>
+                                    </ul><br /><br />
                                   <p><span class="bar-label">Intellectual</span>
                                       <ngb-progressbar type="success" [value]="25"></ngb-progressbar>
                                     </p>
@@ -167,9 +224,15 @@
                               <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
                                   <ngb-panel id="toggle-3" title="Alectrona">
                                     <ng-template ngbPanelContent>
-                                        <h2>Sugarloaf Network Solutions</h2>
-                                        <p>I climbed radio towers and would install/replace radio equipment</p>
-                                        <img style="float: right;padding-left: 2%;" src="http://agb.rocks/imonatower.jpg" alt="AGB on a tower" /><br /><br />
+                                        <h2>Alectrona</h2>
+                                        <h5>Certifications</h5>
+                                        <ul>
+                                          <li>• JAMF CCT</li>
+                                          <li>• JAMF CCA</li>
+                                          <li>• JAMF CJA</li>
+                                          <li>• Apple Consultant</li>
+                                          
+                                        </ul><br /><br />
                                       <p><span class="bar-label">Intellectual</span>
                                           <ngb-progressbar type="success" [value]="25"></ngb-progressbar>
                                         </p>
@@ -184,57 +247,95 @@
                                         </p>
                                     </ng-template>
                                   </ngb-panel>
-                                  </ngb-accordion>
+                            </ngb-accordion>
 
-
-
-                      
-                      
-                      <h2>Blackstone Technology</h2>
-                      <h5>Certifications</h5>
-                      <ul>
-                          <li>• MIx Developer</li>
-                      </ul>
-                      
-                      <h2>Alectrona</h2>
-                      <h5>Certifications</h5>
-                      <ul>
-                        <li>• JAMF CCT</li>
-                        <li>• JAMF CCA</li>
-                        <li>• JAMF CJA</li>
-                        <li>• Apple Consultant</li>
-                        
-                      </ul>
-                      <p>
-                          <ngb-progressbar type="success" [value]="25"></ngb-progressbar>
-                        </p>
-                        <p>
-                          <ngb-progressbar type="info" [value]="50"></ngb-progressbar>
-                        </p>
-                        <p>
-                          <ngb-progressbar type="warning" [value]="75"></ngb-progressbar>
-                        </p>
-                        <p>
-                          <ngb-progressbar type="danger" [value]="100"></ngb-progressbar>
-                        </p>
                     </ng-template>
                 </ngb-tab>
                 <ngb-tab>
                     <ng-template ngbTabTitle>Design</ng-template>
                     <ng-template ngbTabContent><br />
                       <p>Design has been in my background for as long as I can remember.</p>
-                      <p>
-                          <ngb-progressbar type="success" [value]="25"></ngb-progressbar>
-                        </p>
-                        <p>
-                          <ngb-progressbar type="info" [value]="50"></ngb-progressbar>
-                        </p>
-                        <p>
-                          <ngb-progressbar type="warning" [value]="75"></ngb-progressbar>
-                        </p>
-                        <p>
-                          <ngb-progressbar type="danger" [value]="100"></ngb-progressbar>
-                        </p>
+                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                          <ngb-panel id="toggle-1" title="AGB Design">
+                            <ng-template ngbPanelContent>
+                                <h2>AGB Design</h2>
+                                <h5>Certifications</h5>
+                                <ul>
+                                  <li>• JAMF CCT</li>
+                                  <li>• JAMF CCA</li>
+                                  <li>• JAMF CJA</li>
+                                  <li>• Apple Consultant</li>
+                                  
+                                </ul><br /><br />
+                              <p><span class="bar-label">Intellectual</span>
+                                  <ngb-progressbar type="success" [value]="25"></ngb-progressbar>
+                                </p>
+                                <p><span class="bar-label">Active</span>
+                                  <ngb-progressbar type="info" [value]="50"></ngb-progressbar>
+                                </p>
+                                <p><span class="bar-label">Growth</span>
+                                  <ngb-progressbar type="warning" [value]="75"></ngb-progressbar>
+                                </p>
+                                <p><span class="bar-label">Love</span>
+                                  <ngb-progressbar type="danger" [value]="100"></ngb-progressbar>
+                                </p>
+                            </ng-template>
+                          </ngb-panel>
+                    </ngb-accordion>
+                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                          <ngb-panel id="toggle-2" title="Earth Treks">
+                            <ng-template ngbPanelContent>
+                                <h2>Earth Treks</h2>
+                                <h5>Certifications</h5>
+                                <ul>
+                                  <li>• JAMF CCT</li>
+                                  <li>• JAMF CCA</li>
+                                  <li>• JAMF CJA</li>
+                                  <li>• Apple Consultant</li>
+                                  
+                                </ul><br /><br />
+                              <p><span class="bar-label">Intellectual</span>
+                                  <ngb-progressbar type="success" [value]="25"></ngb-progressbar>
+                                </p>
+                                <p><span class="bar-label">Active</span>
+                                  <ngb-progressbar type="info" [value]="50"></ngb-progressbar>
+                                </p>
+                                <p><span class="bar-label">Growth</span>
+                                  <ngb-progressbar type="warning" [value]="75"></ngb-progressbar>
+                                </p>
+                                <p><span class="bar-label">Love</span>
+                                  <ngb-progressbar type="danger" [value]="100"></ngb-progressbar>
+                                </p>
+                            </ng-template>
+                          </ngb-panel>
+                    </ngb-accordion>
+                    <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                        <ngb-panel id="toggle-3" title="General Influence">
+                          <ng-template ngbPanelContent>
+                              <h2>General Influence</h2>
+                              <h5>Certifications</h5>
+                              <ul>
+                                <li>• JAMF CCT</li>
+                                <li>• JAMF CCA</li>
+                                <li>• JAMF CJA</li>
+                                <li>• Apple Consultant</li>
+                                
+                              </ul><br /><br />
+                            <p><span class="bar-label">Intellectual</span>
+                                <ngb-progressbar type="success" [value]="25"></ngb-progressbar>
+                              </p>
+                              <p><span class="bar-label">Active</span>
+                                <ngb-progressbar type="info" [value]="50"></ngb-progressbar>
+                              </p>
+                              <p><span class="bar-label">Growth</span>
+                                <ngb-progressbar type="warning" [value]="75"></ngb-progressbar>
+                              </p>
+                              <p><span class="bar-label">Love</span>
+                                <ngb-progressbar type="danger" [value]="100"></ngb-progressbar>
+                              </p>
+                          </ng-template>
+                        </ngb-panel>
+                  </ngb-accordion>
                     </ng-template>
                 </ngb-tab>
               </ngb-tabset>
