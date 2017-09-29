@@ -1,0 +1,80 @@
+
+  .hamburger-container {
+    width: 60px;
+    height: 45px;
+    position: relative;
+    top: 20px;
+    left: 15px;
+    margin: 50px auto;
+    cursor: pointer;
+  }
+  .hamburger-container span {
+    background: #323b43;
+    display: block;
+    position: absolute;
+    height: 9px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all .75s cubic-bezier(0.22, 0.61, 0.36, 1);
+    -moz-transition: all .75s cubic-bezier(0.22, 0.61, 0.36, 1);
+    -o-transition: all .75s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition: all .75s cubic-bezier(0.22, 0.61, 0.36, 1);
+    opacity: 1;
+    width: 100%;
+  }
+  
+  span {
+    border-radius:10px;
+    left: 0;
+  }
+  
+  .hamburger span:nth-child(1) {
+    top: 0px;
+  }
+  .hamburger span:nth-child(2), .hamburger span:nth-child(3) {
+    top: 18px;
+  }
+  .hamburger span:nth-child(4) {
+    top: 36px;
+  }
+  #btnControl {
+      display: none;
+  }
+  
+  #btnControl:checked + label > div > span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  #btnControl:checked + label > div > span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  #btnControl:checked + label > div > span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    
+  }
+  #btnControl:checked + label > div > span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  #btnControl:checked + label > div {
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    -webkit-transform: translate(200px,0);
+    -moz-transform: translate(200px,0);
+    -o-transform: translate(200px,0);
+    -ms-transform: translate(200px,0);
+    transform: translate(200px,0);
+  }
+  

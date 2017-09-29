@@ -1,0 +1,293 @@
+<md-sidenav-container class="sidenav-container" style="position: absolute;" >
+    
+    <md-sidenav #sidenav class="sidenav" mode="push">
+        
+            <div ng-controller="AnchorScrollController" style="text-align: center;">
+                <br /><br /><br />
+              <div>
+                  <a href="#"></a>
+                  <a href="#" ng-click="jumpToLocation('About')">
+                      <img class="img-circle" style="max-width: 80%; max-height: 80%;" src='http://agb.rocks/face-square.jpg' alt="Amanda's face" /></a><br/>
+              </div>
+              <div class="subnav-links" >
+                <a href="" ng-click="jumpToLocation('Home')">Home</a><br/>
+              <a href="" ng-click="jumpToLocation('About')">About</a><br/>
+              <a href="" ng-click="jumpToLocation('Resume')">Resume</a><br/>
+              <a href="" ng-click="jumpToLocation('Design')">Design</a><br/>
+              <a href="" ng-click="jumpToLocation('Contact')">Contact</a><br/>
+            </div>
+              <a href="" class="toTop" ng-click="jumpToLocation('Home')">&#187;</a><br/>
+            
+          </div>
+            
+    </md-sidenav>
+    <!-- TODO: clean up breaks in CSS -->
+        
+          <!-- Beginning of site -->
+          <div class="sidenav-content">
+        
+            <!-- Header -->
+            <div class="container"><p class="disclaimer">Heyo!</p></div>
+            <div class="header container">
+                <h1 style="text-align: center;" id="Home" class="full-width">Welcome!</h1>
+        
+              <p>My name is Amanda Greenberry Brown and I'm a web developer based in Washington, DC. I have never made an Angular application before, but am extremely motivated to do so after hearing that is it the preferred language of Full Measure Education. I don't have a lot of experience in Angular, but I've made this website for you!</p> <br />
+              <p class="disclaimer">It's definitely a website</p><h3>About This Website</h3> 
+              <br />
+              <h4>Resources</h4> 
+              <p>
+                  I have tried and suceeded/failed to use so many resources. The ones that survived were:</p>
+                  <ol>
+                    <li><a href="https://ng-bootstrap.github.io">ng-boostrap</a></li>
+                    <li><a href="https://material.angular.io/">Angular Material</a></li>
+                    <li>Classes by <a href="https://www.skillshare.com/user/angular">Grant 'Angular' L</a></li>
+                  </ol>
+              <p>This project has turned into quite a saga of failure and success. I can't wait to feel comfortable with all of the amazing resources I couldn't get to work, but are clearly <i>awesome</i> and will be extremely useful/visually pleasing.</p><br />
+              <p class="disclaimer">Seriously, why would I present this crappy website you wonder?</p>
+              <h3>Disclaimer</h3>
+              <p>This one-page website is far from perfect. I would relish the opportunity to get to practice some more elegant ways of coding in Angular. But it has been a lot of fun.<br /><br />I have reached the point where I just need to get it sent before it's too late!<br /><br />What I'm trying to convey is:</p>
+                <ol>
+                  <li>I can learn a new language and do <i>something</i> with it in a week.</li>
+                  <li>My design skills exist.</li>
+                  <li>I'm very serious about wanting to work for Full Measure!</li>
+                </ol>
+            </div>
+            <hr />
+            
+            <!-- About -->
+            <div class="container" id="About">
+                <p class="disclaimer">A bunch of "I-statements".</p>
+                <h1>About Me</h1>
+              <p>I was born in DC, grew up in MD. From a young age, I was climbing everything that I could (as well as many things that I shouldn't). Into adulthood, this translated into becoming a rock climber where people don't get <i>so</i> mad at you for climbing things. <br /><br />I love learning working and school was a perfect outlet for that. I graduated from UMD a semester early -- not because I was especially smart, but because I loved the challenge.<br /><br />
+              I'm an active memeber at Washington Improv Theater (or WIT) as both an improviser and a volunteer. Although it has only been a year, improv has had a huge impact on my life. Just in being able to talk to people it has helped, but also at work when I need to support someone, I am now considerably equipped to do so. </p>
+              
+              
+            </div>
+            <hr>
+        
+            <!-- Resume -->
+            <div class="container" id="Resume">
+                <p class="disclaimer" select="disable">I like to make things and help people.</p> <br />
+                <h1>Resume</h1>
+                <br />
+              <ngb-tabset>
+                <ngb-tab title="Introduction">
+                  <ng-template ngbTabContent>
+                    <div class="resume-tab">
+                        <p>This section can serve as an opportunity to read a little bit more about three central focuses I have within my work experience. It's too much to put on a resume cleanly, but an abridged, pretty version is available below. Please feel free to reach out if you have any further questions! <br /><br />
+                          <a href="http://agb.rocks/Resume.092617.WebDeveloper.pdf">Download Resume</a><br /><a href="mailto:green6erry@gmail.com?subject=I have a question about your resume!">Send an Email</a></p>
+                    </div>
+                    
+                    
+                    <!-- <ngb-alert [dismissible]="false">
+                    <strong>Warning!</strong> This is an alert!
+                  </ngb-alert> -->
+                  </ng-template>
+                </ngb-tab>
+                <ngb-tab>
+                    <ng-template ngbTabTitle>Communications</ng-template>
+                    <ng-template ngbTabContent>
+                        <br /><p>My experience in communications is possibly my biggest strength. </p>
+                        <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                            <ngb-panel id="toggle-1" title="Bachelors Degree">
+                              <ng-template ngbPanelContent>
+                                  <h2>Bachelors in Communications from UMD</h2>
+                                  <p>My education has become my distinguishing feature in the tech world. I’ve gained awareness of the social dynamics, both in a workplace and the digital world. I’ve learned to foster the highest level of customer service, teamwork practices, and conflict-resolution strategies. 
+                                    </p><br />
+                                    <h4>Communications was Great<br /><span class="span-disclaimer">I actually wanted to be an Engineer...</span></h4>
+                                    <p>To be entirely honest, even though I graduated with a GPA of 3.8, I knew for most of my college career that I did not want a career in communications. Throughout school, I worked a minimum of two jobs on top of being a full-time studen -- including my final semester when I was pursuing 21 course credits. <br /><span class="span-disclaimer">Sleep is for the dead.</span> <br /><br />This experience was an excellent lesson. I have learned that when I'm not stimulated with what I'm doing, I will find something that will. In college, that meant being a workaholic. Nowadays, it means being a workaholic (albeit one that sleeps more). I like to work, and for me that means needing to perform a balancing-act; needing to be pulled in different directions. I've learned how to manage my time and energy in pursuit of things I know now that I want to accomplish.</p>
+                                    
+                                  <br />
+                                  <h4><span class="span-disclaimer">Arbitrary</span><br />Quick-Rating </h4>
+                                <p>
+                                    <ngb-progressbar  type="success" [value]="50">Intellectual</ngb-progressbar>
+                                    <ngb-progressbar type="info" [value]="100">Active</ngb-progressbar>
+                                    <ngb-progressbar type="warning" [value]="95">Growth</ngb-progressbar>
+                                    <ngb-progressbar type="danger" [value]="75">Love</ngb-progressbar>
+                                  </p>
+                              </ng-template>
+                            </ngb-panel>
+                      </ngb-accordion>
+                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                          <ngb-panel id="toggle-2" title="Retail">
+                              <ng-template ngbPanelContent>
+                                  <h2>Retail</h2>
+                                  <p>Six years of working in retail has taught me all kinds of lessons. For one semester, I was working 3 retail positions at once. Some of my favorites are patience, the power of being nice to people, how much smoother things are when you clean up after yourself.  
+                                    </p><br />
+                                    <h4>Patience<br /><span class="span-disclaimer">When to slow down</span></h4>
+                                    <p>People are awesome. There are so many ways that we as humans communicate what we want to communicate, whether it be intentional or not. Having patience to listen to people and not trying to fit people into a box (i.e. stating objectively "Nice people do [action], and they definitely don't so [other action]") is one of my favorite lessons from retail. You just never know how awesome a person is if you don't pay attention.</p><br />
+                                      
+                                    <h4>Being Nice<br /><span class="span-disclaimer">Everyone wins.</span></h4>
+                                      <p>Closely tied with patience is how incredibly people's demeanor changes when you're nice to them -- especially when they don't expect you to be. I loved when this would happen. I would always take the "bad" customer. It is entirely worth the "loss of pride" to allow someone to be rude or upset, respect their emotions, and still treat them with kindness or respect. <span class="span-disclaimer">Happy feelings all around.</span> </p>
+
+                                      <h4>Clean Up After Yourself<br /><span class="span-disclaimer">It's worth the extra minutes</span></h4>
+                                      <p>Something that has not come naturally to me (because of course you should be nice to people, but really do I <i>have</i> to put the labelmaker away right now?) is the power of cleaning up your space. The concept behind this is respecting people's time and energy (yes, do put the labelmaker away because then when someone needs it next, they know where to look). When you clean up after yourself, you're taking the weight off another person to have to deal with your mess. Just reducing the uncertainly alone (the hesitancy of wondering if the labelmaker will be in it's labelmaker house) encourages good habits ("I know the labelmaker will be there so I go and get it and I will use it!"). <br /><br />
+                                      It's the same everywhere I go. When you respect people, it needs to show to reap the benefits. There are many ways of respecting people. I've learned that cleaning up after yourself has been a wonderful, tactile expression of me respecting other people.</p>
+                                    
+                                  
+                              </ng-template>
+                          </ngb-panel>
+                    </ngb-accordion>
+                    <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                        <ngb-panel id="toggle-3" title="Earth Treks">
+                          <ng-template ngbPanelContent>
+                              <h2>Earth Treks</h2>
+                              <p>I was an instructor, manager, chalkboard artist, and retail specialist throughout my 8 years at Earth Treks. The company has seen me transform from a scatterbrained youth into a less-scatterbrained adult. </p>
+                              <h4>Instruction<br /><span class="span-disclaimer">Conveying information</span></h4>
+                              <p>I learned how to state information so it would be understood. From the hundreds (or thousands?) of children and adults I've taught thoughout the years, I've learned there is no one size fits all. Sometimes, you don't know what "size" it is, but I've learned to try to learn the "size" and know that if the "shoe doesn't fit, it's not because their foot is wrong; he or she just needs a different size shoe" <span class="span-disclaimer">I could use that metaphor all day.</span><br /><br /></p>
+                              <h4>Teamwork<br /><span class="span-disclaimer">It's so much fun</span></h4>
+                              <p>If you've been reading my other secions, you know by now that I like people and I like help. There have been many "I"-this and "I"-that statements being said on this website! So do I like work well with others? <span class="span-disclaimer">I try to</span><br /><br />
+                              Honestly, you'd have to ask them, but I do prefer to work on a team. I prefer to have a connection with people even in very technical work. I like to teach people my job so that I can take breaks sometimes. I like gaining people's trust and vice versa, and coming in to the office in the morning to a united front.<span class="span-disclaimer">That's a little over the top</span><br /><br /></p>
+                              <h5>Psyche<br /><span class="span-disclaimer">It's important</span></h5>
+                              <p>Part of why I prefer being on a team is because I like to stay focused and excited. I do naturally get distracted sometimes when it's just me counting on me. When there are people to work with, the support system is key for days if I'm maybe drained to be egged along or if someone's having a crap day, to just be there to hear about it. When you're a part of a team, people can point things out to eachother that you many not notice ("You've been drained like everyday these last couple weeks"), as well as the trust in one another to be able to be honest (tactfully).  <span class="span-disclaimer">Very much tactfully</span><br /><br />
+                          </ng-template>
+                        </ngb-panel>
+                  </ngb-accordion>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab>
+                    <ng-template ngbTabTitle>Technology</ng-template>
+                    <ng-template ngbTabContent><br />
+                      <p>Technology is what makes me happiest. My mom ran a company called "Computertots" when I was young. From that day on, I've had nightmares about the witch in one of the games sneaking through the window like she did in the game. I might've been a little too young when I learned MS-DOS<br /><br />
+                      Nowadays, I have a love/hate relationship with the Console Log! Making this application this week has been a ton of fun.  </p>
+                      
+                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                          <ngb-panel id="toggle-1" title="Sugarloaf Network Solutions">
+                            <ng-template ngbPanelContent>
+                                <h2>Sugarloaf Network Solutions</h2>
+                                <p>SNS is a means of providing internet to rural parts of Maryland where big companies cannot reach. It is a network of radios that create a web such that every customer is also a hub for other customers around them. What got me the job was that I could safely ascend radio towers to install/replace radio equipment</p>
+                                <h5>Troubleshooting</h5>
+                                <p>We recieved a great deal of calls about how service was just not very good, so a big part of my job was being able to follow procedures and troubleshoot what the issue was. Sometimes, rotating the radio just one degree to the left was all it too for users connectivity to go from 50% to 80%.</p><br/>
+                                <div style="text-align: center;">
+                                  <span class="span-disclaimer">Look at me on a tower...</span>
+                                  <img style="padding-left: 2%;" src="http://agb.rocks/imonatower.jpg" alt="AGB on a tower" /></div><br /><br />
+
+                            </ng-template>
+                          </ngb-panel>
+                          </ngb-accordion>
+
+                          <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                              <ngb-panel id="toggle-2" title="Blackstone Technology">
+                                <ng-template ngbPanelContent>
+                                    <h2>Blackstone Technology</h2>
+                                    <p>Blackstone was a wonderful position to get more into my career as a development. I learned about Agile workflow, partner-coding, and a lot more in-depth user testing than I'd ever worked with before. I came in towards the end of a larger product, so my job was mainly front-end edits. I would perform tasks like generate an email alert and make a graph look better.<br /><br />
+                                    It was at Blackstone that I further was able to see that I am my best worker when I have a project that I can truly pour all of my time and energy into; a postition where you're brain figuratively cannot handle a second job because you go home wiped everyday. Day after day, progress doesn't seem like progress becuase you didn't finish the assignment. And then one day, it just works! That is my favorite work task and Blackstone was the first time I was paid to work on projects like that. </p>
+                                    
+                                    <h5>Certifications</h5>
+                                    <ul>
+                                        <li>• MIx Developer</li>
+                                    </ul>
+                                    <br/><br/>
+                                  </ng-template>
+                              </ngb-panel>
+                            </ngb-accordion>
+
+                            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                                <ngb-panel id="toggle-3" title="Alectrona">
+                                  <ng-template ngbPanelContent>
+                                      <h2>Alectrona</h2>
+                                        
+                                        <p>Alectrona was where my coding, multi-tasking, and customer service skills finally came together and convened into an excellent learning position. I especially enjoyed my JAMF certifications that opened up this world of database management and </p>
+                                        <br />
+                                        <h4>BASH Command Line<br /><span class="span-disclaimer">It's like magic!</span></h4>
+                                        <br />
+                                          <p>All of the code I had ever worked on before had been front-end, or database queries. This was the first time I was able to script actual programs that accomplished a task. I made applications that would clean a desktop or remove extraneous files for users that we managed.</p><br />
+                                          <h4>Myriad of Tools<br /><span class="span-disclaimer">New problems, same solutions!</span></h4>
+                                          <br />
+                                            <p>When we hired people at Alectrona, we hired them because they were great and not necessarily because of their technical expertise. The agents that we were using to manage our clients were seemingly endless for a newcomer. The nomenclature for some of these agents had no apparent relation to the domain name, or the name it was called would not be visible on their website (instead, the parent company name would be there). We did have an internal wiki and a pretty great system, but there was just so much work to be done that I set out to develop a means to simplify the process<br /><span class="span-disclaimer">A solution to the confusion.</span>
+                                              <br /></p>
+                                              <button type="btn" href="https://chrome.google.com/webstore/detail/alectrona-portal/pobinmecaodbakknlolkilgbkjncpnpe">Alectrona Portal Extension</button>
+                                              <p><br />
+                                            I created a Google Chrome Extension that would make it easier and more intuitive to find where we needed to go. This centralized all the many companies, agents, and processes for finding information -- and all with [miserably] simple code.<br /><br />
+                                            <b>It's really amazing what you can do with just a little bit of code.</b>
+                                            </p>
+                                        <h5>Certifications</h5>
+                                        <ul>
+                                          <li>• JAMF CCT</li>
+                                          <li>• JAMF CCA</li>
+                                          <li>• JAMF CJA</li>
+                                          <li>• Apple Consultant</li>
+                                          
+                                        </ul>
+                                    </ng-template>
+                                  </ngb-panel>
+                            </ngb-accordion>
+
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab>
+                    <ng-template ngbTabTitle>Design</ng-template>
+                    <ng-template ngbTabContent><br />
+                      <p>Design has been in my background for as long as I can remember. I built a bed that hung from the ceiling, and you could crank up to have room for activities. It was a clunky, mess of a construction, but I look back on that to this day when I think I was 10. </p>
+                      <h2>AGB Design</h2>
+                      <p>AGB Design is what I call myself </p>
+                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                          <ngb-panel id="toggle-1" title="Web Development">
+                            <ng-template ngbPanelContent>
+                                <span class="disclaimer">I don't know why I keep getting hired for this.</span><br /><h4>Wireframes &#x26; Prototyping</h4>
+                                <p>I've done wireframes and prototyping since the start of this year. It's something I'm enjoying getting better at it, although it's hard to break the developer mindset when that's what I've learned first. Still, good UI is key and planning it out is something I enjoy better at.</p>
+                                <span class="disclaimer">I usually make my websites that...</span><br /><h4>Responsive</h4>
+                                <p>While this website is not especially responsive, I do enjoy when website <i>are</i> responsive and typically make mine accordingly. I also offer service to convert people websites to a responsive design.</p>
+                                <span class="disclaimer">Small indeed</span><br />
+                                <h4>My Own Applications</h4>
+                                
+                                <p>The applications I make are small and typically functional. I like building them and assume I will get better the more I do so (like figuratively everyone says). You can see some at <a href="http://agb.rocks/apps.html" alt="AGB Design Apps Gallery">my website</a>.</p>
+                            </ng-template>
+                          </ngb-panel>
+                    </ngb-accordion>
+                      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                          <ngb-panel id="toggle-2" title="Graphics">
+                            <ng-template ngbPanelContent>
+                                <h4>Logo Design</h4>
+                                <p>Vector-based design is one of my favorites for the same reason I love coding: you work on it forever and it's never right -- until suddenly, it is. And once it is, it is for good. I use Adobe Illustrator for this.</p><div><img style="max-width: 100%" src="http://agb.rocks/content/images_general/SK-logo-910x430.jpg" alt="SK Logo by AGB" /></div>
+                                <h4>Photo Enhancement</h4>
+                                <p>Photoshop is an all-around fun tool. It's the program I've had the most experience with in the beginning of college. I am very comfotable on in it.</p>
+                                <h4>Chalkboards</h4>
+                                <p>Chalk is very creative medium that I've enjoyed learning and working with over the years. </p><div><img style="max-width: 100%" src="http://agb.rocks/content/images_general/shramp-910x430.jpg" alt="Climber Mantis Shrimp by AGB" /></div>
+                            </ng-template>
+                          </ngb-panel>
+                    </ngb-accordion>
+                    </ng-template>
+                </ngb-tab>
+              </ngb-tabset>
+            </div>
+    
+            <hr />
+    
+    
+            <br />
+    
+    
+            <!-- Alerts -->
+            <!-- <div class="container">
+              <ngbd-alert-closeable></ngbd-alert-closeable>
+            </div>
+            <br /> -->
+    
+            <!-- Picture Slideshow -->
+            
+            <div class="container" id="Design">
+                <p class="disclaimer">Sorry the formatting is crap.</p>
+                <h1>Design Examples</h1><sub>(You can view more <a href="http://agb.rocks/apps.html">here)</a>.</sub><br /><br />
+              <ngbd-carousel-basic></ngbd-carousel-basic>
+            </div>
+            <br />
+    <hr>
+            <!-- Contact -->
+            <div class="container" id="Contact">
+                <p class="disclaimer">I would be so excited.</p>
+              <h1>Contact</h1>
+              <p>You can email me <a href="mailto:green6erry@gmail.com?subject=Contact from your website">here</a> should you feel inclined to speak further. <br />
+                You can also check out my website at http://agb.rocks/. <br /><br /><sub>(The "rocks" ending is in reference to my time as a rock climber and less to say "I think I'm amazing". But hopefully I'm okay!)</sub><br />
+                <br />Thanks for looking at my website and I hope to speak soon!</p><br /><p class="disclaimer">Cheers!</p>
+            </div>
+            </div>
+    
+    </md-sidenav-container>
+    
+    
+    <div class="sidenav-alt-main-icon" user-select="none" type="button" md-button (click)="sidenav.toggle()">
+      &#9776;
+    </div>
+    
+    <!-- <app-burger2>sdfs</app-burger2> -->
