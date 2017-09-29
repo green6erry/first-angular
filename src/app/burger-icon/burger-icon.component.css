@@ -4,7 +4,12 @@
 	margin: auto;
 	cursor: pointer;
     position: relative;
+<<<<<<< HEAD
     opacity: 0;
+=======
+	opacity: 1;
+
+>>>>>>> master
 }
 .burger:before, .burger span, .burger:after {
 	width: 100%;

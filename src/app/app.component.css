@@ -1,6 +1,23 @@
 
+<<<<<<< HEAD
 * {
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+=======
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+.example-card {
+  width: 400px;
+}
+
+.example-header-image {
+  /* background-image: url('../../../assets/img/examples/shiba1.jpg'); */
+  background-size: cover;
+}
+* {
+  vertical-align: middle;  
+  /* font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif; */
+>>>>>>> master
 }
 
 
@@ -10,9 +27,12 @@ html, body, material-app, md-sidenav-container, .my-content {
     height: 100%;
   }
 
+<<<<<<< HEAD
   .sidenav-main-icon {
       color: blue;
   }
+=======
+>>>>>>> master
   .full-width {
     margin: 20px;
   }
@@ -20,10 +40,13 @@ html, body, material-app, md-sidenav-container, .my-content {
     border-radius: 50%;
 }
 
+<<<<<<< HEAD
 profile {
   vertical-align: middle;
 }
 
+=======
+>>>>>>> master
   .sidenav-main-icon[_ngcontent-c0] {
     font-size: xx-large;
     z-index: 11;
@@ -51,4 +74,82 @@ profile {
 
   .sidenav-alt-main-icon:hover {
     opacity: 1;
+<<<<<<< HEAD
+=======
+  }
+
+  .toTop {
+    transform: rotate(270deg);
+    font-size: xx-large;
+    position: fixed;
+    bottom: 2%;
+    text-align: right;
+  }
+
+  .resume-tab {
+    width:90%; padding: 2%;
+  }
+  a {
+    color: gray;
+    /* background: -webkit-linear-gradient(lightgray, gray);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+  }
+
+  .subnav-links {
+    text-align: left;
+    margin: 3%;
+    font-size: x-large;
+  }
+  .subnav-links > a{
+    color:black;
+  }
+  .subnav-links > a:hover, a:hover{
+    /* background: -webkit-linear-gradient(purple, gray);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: lightgray;
+    text-decoration: none;
+    -webkit-transition: all .75s cubic-bezier(0.22, 0.61, 0.36, 1);
+    -moz-transition: all .75s cubic-bezier(0.22, 0.61, 0.36, 1);
+    -o-transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+    opacity: 1;
+    width: 100%;
+    font-style: bold;
+  }
+
+
+  .background-fullpage {
+    background: #c0c0aa;
+    background: -moz-linear-gradient(180deg, #c0c0aa 0%, #1ce 100%);
+    background: -webkit-gradient(linear, top, bottom, color-stop(0%, #c0c0aa), color-stop(100%, #1ce));
+    background: -webkit-linear-gradient(to left, #c0c0aa, #1ce);
+    background: -o-linear-gradient(180deg, #c0c0aa 0%, #1ce 100%);
+    background: linear-gradient(180deg, #c0c0aa, #1ce);
+  }
+
+  .disclaimer, .span-disclaimer {
+    font-family: 'Homemade Apple', cursive;
+    color: lightgray;
+    opacity: .25;
+  }
+  .disclaimer {
+    position: absolute;
+    font-size: 40px;
+  }
+  .span-disclaimer {
+    font-family: 'Homemade Apple', cursive;
+    color: lightgray;
+    padding: 4%;
+  }
+
+  .bar-label {
+    position: absolute;
+    color: white;
+    font-family: courier;
+    text-shadow: 2px 2px #000;
+    margin-left: 1%;
+    
+>>>>>>> master
   }
