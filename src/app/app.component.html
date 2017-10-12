@@ -1,14 +1,15 @@
-<md-sidenav-container class="sidenav-container" style="position: absolute;" >
+<md-sidenav-container user-select="none" class="sidenav-container" style="position: absolute;" >
     
-    <md-sidenav #sidenav class="sidenav" mode="push">
+    <md-sidenav #sidenav class="sidenav" mode="push" user-select="none">
         
-            <div ng-controller="AnchorScrollController" style="text-align: center;">
+            <div ng-controller="AnchorScrollController" user-select="none" style="text-align: center;">
                 <br /><br /><br />
               <div>
                   <a href="#"></a>
                   <a href="#" ng-click="jumpToLocation('About')">
                       <img class="img-circle" style="max-width: 80%; max-height: 80%;" src='http://agb.rocks/face-square.jpg' alt="Amanda's face" /></a><br/>
               </div>
+              
               <div class="subnav-links" >
                 <a href="" ng-click="jumpToLocation('Home')">Home</a><br/>
               <a href="" ng-click="jumpToLocation('About')">About</a><br/>

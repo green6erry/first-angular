@@ -54,6 +54,10 @@ html, body, material-app, md-sidenav-container, .my-content {
     line-height: 75%;
   }
 
+  .sidenav-alt-main-icon[_ngcontent-c0],   a [_ngcontent-c0] {
+    user-select: none;
+  }
+
   .sidenav-alt-main-icon:hover {
     opacity: 1;
   }
